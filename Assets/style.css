@@ -3,7 +3,15 @@
     padding: 0%;
     margin: auto;
 }
+img {
+    border-radius: 7px;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 body {
     background-color:darkmagenta;
     padding: 25px;
@@ -46,14 +54,46 @@ header nav ul li {
 .logo-image {
     width: 100%;
 }
+h2  {
+    text-align: center;
+    font-size: 30px;
+}
+.my-about {
+    text-align: center;
+    font-size: 25px;
+}
 #About-me {
     width: 70%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    
     }
 .float-image{
-    height: 200px;
-    width: 250px;
+    width: 50%;
 }
-#About-Projects-Contact {
-justify-content:center;
+h3  {
+    text-align: center;
+    font-size: 30px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bigger {
+    width: 100%;
+}
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    .my-about{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+    body{
+        padding: 5px;
+    }
 }
